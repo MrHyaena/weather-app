@@ -6,8 +6,21 @@
     <title>Weather app</title>
   </head>
   <body>
-    <input type="text" placeholder="City" id="city" />
+    <div id="cityPick">
+      <input type="text" placeholder="City" id="city" />
+      <button id="showCity">Show</button>
+    </div>
+
     <div id="container">
+      <div id="controls">
+        <button id="temp">Temp</button>
+        <button id="wet">wet</button>
+        <button id="wind">Wind</button>
+        <button id="press">Press</button>
+      </div>
+      <div id="display">
+        <h3 id="header" class="dayName">Today is</h3>
+      </div>
       <div id="dayOne" class="days">
         <h3 class="dayName">Mon</h3>
         <div class="dataDiv">
@@ -18,42 +31,42 @@
       <div id="dayTwo" class="days">
         <h3 class="dayName">Tue</h3>
         <div class="dataDiv">
-          <h4 class="data" id="dataOne">20</h4>
+          <h4 class="data" id="dataTwo">20</h4>
           <h5 class="symbol">c</h5>
         </div>
       </div>
       <div id="dayThree" class="days">
-        <h3 class="dayName">Tue</h3>
+        <h3 class="dayName">Wen</h3>
         <div class="dataDiv">
-          <h4 class="data" id="dataOne">20</h4>
+          <h4 class="data" id="dataThree">20</h4>
           <h5 class="symbol">c</h5>
         </div>
       </div>
       <div id="dayFour" class="days">
-        <h3 class="dayName">Tue</h3>
+        <h3 class="dayName">Thu</h3>
         <div class="dataDiv">
-          <h4 class="data" id="dataOne">20</h4>
+          <h4 class="data" id="dataFour">20</h4>
           <h5 class="symbol">c</h5>
         </div>
       </div>
       <div id="dayFive" class="days">
-        <h3 class="dayName">Tue</h3>
+        <h3 class="dayName">Fri</h3>
         <div class="dataDiv">
-          <h4 class="data" id="dataOne">20</h4>
+          <h4 class="data" id="dataFive">20</h4>
           <h5 class="symbol">c</h5>
         </div>
       </div>
       <div id="daySix" class="days">
-        <h3 class="dayName">Tue</h3>
+        <h3 class="dayName">Sat</h3>
         <div class="dataDiv">
-          <h4 class="data" id="dataOne">20</h4>
+          <h4 class="data" id="dataSix">20</h4>
           <h5 class="symbol">c</h5>
         </div>
       </div>
       <div id="daySeven" class="days">
-        <h3 class="dayName">Tue</h3>
+        <h3 class="dayName">Sun</h3>
         <div class="dataDiv">
-          <h4 class="data" id="dataOne">20</h4>
+          <h4 class="data" id="dataSeven">20</h4>
           <h5 class="symbol">c</h5>
         </div>
       </div>
