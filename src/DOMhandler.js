@@ -6,11 +6,11 @@ export function createDom() {
   showCity.addEventListener("click", () => {
     const city = document.querySelector("#city");
     let cityValue = city.value;
-    getData(cityValue).then((data) => changeDom(data));
+    getData(cityValue).then((data) => changeDomData(data));
   });
 }
 
-async function changeDom(data) {
+async function changeDomData(data) {
   console.log(data);
   const dataOne = document.querySelector("#dataOne");
   dataOne.textContent = data.days[0].temp;
