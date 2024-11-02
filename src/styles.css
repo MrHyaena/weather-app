@@ -30,7 +30,7 @@ body {
 
 #city {
   width: 300px;
-  background-color: var(--background-col);
+  background-color: rgba(0, 0, 0, 0);
   border-style: none none solid none;
   border-color: var(--first-color);
   font-size: 40px;
@@ -67,7 +67,7 @@ input:focus {
   border-radius: 20px;
   box-shadow: 0px 0px 12px 1px var(--box-shadow);
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 3fr 2fr;
   grid-template-columns: repeat(7, 1fr);
   padding: 20px 20px;
   gap: var(--my-gap);
@@ -96,16 +96,32 @@ input:focus {
   background-color: rgb(116, 102, 84);
 }
 
+#temp:hover {
+  background-color: rgb(158, 134, 103);
+}
+
 #wind {
   background-color: rgb(88, 101, 107);
+}
+
+#wind:hover {
+  background-color: rgb(119, 152, 168);
 }
 
 #wet {
   background-color: rgb(52, 62, 110);
 }
 
+#wet:hover {
+  background-color: rgb(83, 97, 168);
+}
+
 #press {
   background-color: grey;
+}
+
+#press:hover {
+  background-color: rgb(160, 160, 160);
 }
 
 /* Display for today */
@@ -195,8 +211,12 @@ input:focus {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
+}
+
+.days h3 {
+  margin: 0px 0px 20px 0px;
 }
 
 .dayName {
